@@ -16,7 +16,6 @@ def solve():
         x, y = make_move(move, 0, 0)
         tiles[(x, y)] = abs(tiles.get((x, y), 0) - 1)
         for neighbour in get_neighbours(x, y):
-            print(f'n: ')
             if neighbour not in tiles:
                 tiles[neighbour] = 0
     
